@@ -1,0 +1,17 @@
+#Implement a function to check if a list is a palindrome.
+#|first define two equal strings|#
+(define l1 (list 'r 'a 'c 'e 'c 'a 'r))
+(define l2 (list 'r 'a 'c 'e 'c 'a 'r))
+#|reverse the first string|#
+(define (reverse l1)
+  (if (null? l1)
+     nil
+     #|recursively add the first element to the list 
+      to the end, and the rest of the list in the front
+      racecar -> acecarr -> cecarra -> ecarrac -> carrace
+      -> arracec -> rraceca -> racecar|#
+     (append (reverse (cdr l1)) (list (car l1)))
+  )
+)
+#|check if both strings are equal, #t if true, #f if false|#
+print(equal? l1 l2)
