@@ -1,4 +1,8 @@
-#Implement a function to check if a list is a palindrome.
+#|
+    Implement a function to check if a list is a palindrome.
+     https://repl.it/repls/LegalCourageousCategories
+|#
+
 #|first define two equal strings|#
 (define l1 (list 'r 'a 'c 'e 'c 'a 'r))
 (define l2 (list 'r 'a 'c 'e 'c 'a 'r))
