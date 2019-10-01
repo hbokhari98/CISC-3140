@@ -1,0 +1,27 @@
+#|
+  Merge two sorted lists into one sorted list. You can assume both input lists are sorted in ascending order.
+  https://repl.it/repls/MistyroseSilverRectangle
+
+|#
+
+#|
+  define a function merge that takes two lists, a and b
+|#
+(define (merge a b)
+#|
+  to check if lists are now empty, base case to end recursion
+|#
+  (cond ((null? a) b)
+        ((null? b) a)
+#|
+  to merge in ascending order
+|#
+        ((>= (car a) (car b))
+#|
+  to make new list cell with the correct order and recursively call function without the element just added
+|#
+         (cons (car b) (merge a (cdr b))))
+        (else
+         (cons (car a) (merge (cdr a) b)))))
+
+(merge '(1 3 6 7 8) '(2 4 5 5 9))
