@@ -1,0 +1,107 @@
+Script started on Fri Dec  6 20:23:20 2019
+[?1034hbash-3.2$ sqlite3
+SQLite version 3.24.0 2018-06-04 14:10:15
+Enter ".help" for usage hints.
+Connected to a [1mtransient in-memory database[0m.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> CREATE TABLE table1(c1 smallint);
+sqlite> .import /Users/hareem/downloads/Presentation_was_well_organized.csv tabl e1
+sqlite> .mode line
+sqlite> .separator ", "
+sqlite> .excel
+sqlite> SELECT * FROM table1 ORDER BY c1 DESC;
+sqlite> SELECT * FROM table1 ORDER BY c1 DESC;C;[K;[K;[K;[KA;S;C;
+   c1 = 4
+
+   c1 = 4
+
+   c1 = 4
+
+   c1 = 4
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+
+   c1 = 5
+sqlite> SELECT * FROM table1 ORDER BY c1 ASC;DESC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table1 ORDER BY c1 ASC;
+sqlite> .excel
+sqlite> SELECT avg(c1) FROM table1;
+sqlite> CREATE TABLE table2(c2 smallint);
+sqlite> .import /Users/hareem/downloads/Speaker_spoke_clearly_and_was_easy_to_un derstand.csv table2
+Error: multi-character column separators not allowed for import
+sqlite> .import /Users/hareem/downloads/Speaker_spoke_clearly.csv table2
+Error: multi-character column separators not allowed for import
+sqlite> .mode csv
+sqlite> .mode csv[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2
+sqlite> .mode line
+sqlite> .separator ", "
+sqlite> .separator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[10Gmode csv[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[62G_and_was_easy_to_un derstand.csv table2[A[9GCREATE TABLE table2(c2 smallint);[K[80G d[K[A[42G[9GSELECT avg(c1) FROM table1;[K[9G.excel[K
+sqlite> .excel[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[10Gmode csv[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[62G_and_was_easy_to_un derstand.csv table2[A[9GCREATE TABLE table2(c2 smallint);[K[80G d[K[A[42G[9GSELECT avg(c1) FROM table1;[K[9G.excel[K[9GSELECT * FROM table1 ORDER BY c1 ASC;[9G.excel[K[9GSELECT * FROM table1 ORDER BY c1 ASC;DESC;[P [1@2 [P [1@3 [P [1@2 
+sqlite> SELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[10Gmode csv[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[62G_and_was_easy_to_un derstand.csv table2[A[9GCREATE TABLE table2(c2 smallint);[K[80G d[K[A[42G[9GSELECT avg(c1) FROM table1;[K[9G.excel[K[9GSELECT * FROM table1 ORDER BY c1 ASC;[9G.excel[K[9GSELECT * FROM table1 ORDER BY c1 ASC;1[P [1@2 [P [1@3 [P [1@2 
+sqlite> SELECT * FROM table2 ORDER BY c2 ASC;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table2 ORDER BY c2 ASC;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[10Gmode csv[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[62G_and_was_easy_to_un derstand.csv table2[A[9GCREATE TABLE table2(c2 smallint);[K[80G d[K[A[42G[9GSELECT avg(c1) FROM table1;[K;[K2;[P)[1@2)
+sqlite> SELECT avg(c2) FROM table2;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 ASC;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[10Gmode csv[K[10Gimport /Users/hareem/downloads/Speaker_spoke_clearly.csv table2[62G_and_was_easy_to_un derstand.csv table2[A[9GCREATE TABLE table2(c2 smallint);[K[80G d[K[A[42G[9GSELECT avg(c1) FROM table1;[K[9GCREATE TABLE table2(c2 smallint);[P [1@3 2[P([1@3(
+sqlite> .mode s[Kcsv
+sqlite> .import /Users/hareem/downloads/Presenter_was_enthusiastic_about_the_top ic.csv table3
+sqlite> .m[K[K.mode line
+sqlite> .separator ", "
+sqlite> ,[K.excel
+sqlite> .excel[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Presenter_was_enthusiastic_about_the_top ic.csv table3[Amode csv[K[80G i[K[A[18G[9GCREATE TABLE table3(c3 smallint);[9GSELECT avg(c2) FROM table2;[K[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 ASC;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 DESC;[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 DESC;[P [1@3 [P [1@3 
+sqlite> SELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[10Gseparator ", "[10Gexcel[K
+sqlite> .excel[9GSELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Presenter_was_enthusiastic_about_the_top ic.csv table3[Amode csv[K[80G i[K[A[18G[9GCREATE TABLE table3(c3 smallint);[9GSELECT avg(c2) FROM table2;[K[9G.excel[K[9GSELECT * FROM table2 ORDER BY c2 ASC;[P [1@3 2[P [1@3 
+sqlite> SELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Presenter_was_enthusiastic_about_the_top ic.csv table3[Amode csv[K[80G i[K[A[18G[9GCREATE TABLE table3(c3 smallint);[9GSELECT avg(c2) FROM table2;[K;[K3;[P)[1@3)
+sqlite> SELECT avg(c3) FROM table3;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/Presenter_was_enthusiastic_about_the_top ic.csv table3[Amode csv[K[80G i[K[A[18G[9GCREATE TABLE table3(c3 smallint);[P [1@4 3[P([1@4(
+sqlite> CREATE TABLE table4(c4 smallint);[9GSELECT avg(c3) FROM table3;[K[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 DESC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT avg(c3) FROM table3;[9GCREATE TABLE table4(c4 smallint);[9G[K.mode csv
+sqlite> .mode csv[9GCREATE TABLE table4(c4 smallint);[9GSELECT avg(c3) FROM table3;[K[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT avg(c3) FROM table3;[9GCREATE TABLE table4(c4 smallint);[9G.mode csv[K[9G[K.import /Users/hareem/downloads/I_learned_something_new_today.csv table4 
+sqlite> .mode line
+sqlite> .separator ", "
+sqlite> .excel
+sqlite> .excel[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/I_learned_something_new_today.csv table4 [A[10Gmode csv[K[80G  [K[A[18G[9GCREATE TABLE table4(c4 smallint);[9GSELECT avg(c3) FROM table3;[K[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;[9G.excel[K[9GSELECT * FROM table3 ORDER BY c3 ASC;C;[K;[K;[KD;E;C;S;;[K;[KS;D;C;;[K;[KC;[P [1@4 [P 
+Error: near "table": syntax error
+sqlite> SELECT * FROM table ORDER BY c4 DESC;[9G[KSELECT * FROM table ORDER BY c4 DESC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table ORDER BY c4 DESC;[1@4 
+sqlite> SELECT * FROM table4 ORDER BY c4 DESC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table4 ORDER BY c4 DESC;;[K;[K;[K;[KA;S;C;
+sqlite> SELECT * FROM table4 ORDER BY c4 ASC;[9G.excel[K
+sqlite> .excel[9GSELECT * FROM table4 ORDER BY c4 ASC;[9G.excel[K[9GSELECT * FROM table4 ORDER BY c4 DESC;[9G.excel[K[9GSELECT * FROM table ORDER BY c4 DESC;[9G.excel[K[10Gseparator ", "[10Gmode line[K[10Gimport /Users/hareem/downloads/I_learned_something_new_today.csv table4 [A[10Gmode csv[K[80G  [K[A[18G[9GCREATE TABLE table4(c4 smallint);[9GSELECT avg(c3) FROM table3;[K;[K4;[P)[1@4)
+sqlite> .quit
+bash-3.2$ exit
+exit
+
+Script done on Fri Dec  6 20:37:01 2019
