@@ -1,0 +1,208 @@
+Script started on Sat Dec  7 00:58:59 2019
+[?1034hbash-3.2$ svn help
+usage: svn <subcommand> [options] [args]
+Subversion command-line client.
+Type 'svn help <subcommand>' for help on a specific subcommand.
+Type 'svn --version' to see the program version and RA modules,
+     'svn --version --verbose' to see dependency versions as well,
+     'svn --version --quiet' to see just the version number.
+
+Most subcommands take file and/or directory arguments, recursing
+on the directories.  If no arguments are supplied to such a
+command, it recurses on the current directory (inclusive) by default.
+
+Available subcommands:
+   add
+   auth
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+   x-shelve (shelve)
+   x-unshelve (unshelve)
+   x-shelves (shelves)
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+bash-3.2$ svn mkdir hw7
+svn: E155007: '/Users/hareem' is not a working copy
+bash-3.2$ svn list
+svn: E155007: '/Users/hareem' is not a working copy
+bash-3.2$ svn add
+svn: E205001: Try 'svn help add' for more information
+svn: E205001: Not enough arguments provided
+bash-3.2$ svn add Main.java
+svn: E155007: '/Users/hareem' is not a working copy
+bash-3.2$ svnadmin create MyFirstRepository[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KHW[K[Kjavaprogram
+bash-3.2$ pw[K[Kpwd
+/Users/hareem
+bash-3.2$ svn import destination-folder file:///path-to-repository -m "Initial I mport"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Imp[1Port"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Impo[1Prt"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Impor[1Pt"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Import[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Import"[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C file:///path-to-repository -m "Initial Import" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[Cpwd[Ksvnadmin create javaprogram[C[C[C[C[C[C[C[C[C[C[C[C[C[10P add Main.javaadmin create javaprogram[C[C[C[C[C[C[C[C[C[Cpwd[K[K[K[Kls
+3140			Music			eclipse-workspace
+3140project		OS			javaprogram
+Applications		Pictures		njit2019
+Desktop			Postman			screen.log
+Documents		Public			sqlite
+Downloads		VirtualBox VMs		test_file_1.txt
+Library			ctp
+Movies			eclipse
+bash-3.2$ cd javaprogram
+bash-3.2$ ls[K[Kpwd
+/Users/hareem/javaprogram
+bash-3.2$ svn import /Users/j[Khareem/3140/HW7 -m "Initial Import"
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '/Users/hareem/3140/HW7'
+bash-3.2$ svn import /Users/hareem/3140/HW7 -m "Initial Import"[1@/[1@M[1@a[1@i[1@n[1@.[1@j[1@a[1@v[1@a[C[1@ 
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '/Users/hareem/3140/HW7/Main.java'
+bash-3.2$ ls
+README.txt	db		hooks
+conf		format		locks
+bash-3.2$ cs[Ks[Kd ..
+bash-3.2$ ls
+3140			Music			eclipse-workspace
+3140project		OS			javaprogram
+Applications		Pictures		njit2019
+Desktop			Postman			screen.log
+Documents		Public			sqlite
+Downloads		VirtualBox VMs		test_file_1.txt
+Library			ctp
+Movies			eclipse
+bash-3.2$ lscd ..[3Plssvn import /Users/hareem/3140/HW7/Main.java  -m "Initial Import"[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@ [1@/[1@U[1@s[1@e[1@r[1@s[1@/[1@h[1@a[1@r[1@e[1@e[1@,[1P[1@m[1@/j /Users/hareem/3140/HW7  -m "Initial Import" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca /Users/hareem/3140/HW7  -m "Initial Import""[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm /Users/hareem/3140/HW7  -m "Initial Import"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C /Users/hareem/3140/HW7  -m "Initi[1@a[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '/Users/hareem/3140/HW7'
+bash-3.2$ v[Ksvn help import
+import: Commit an unversioned file or tree into the repository.
+usage: import [PATH] URL
+
+  Recursively commit a copy of PATH to URL.
+  If PATH is omitted '.' is assumed.
+  Parent directories are created as necessary in the repository.
+  If PATH is a directory, the contents of the directory are added
+  directly under URL.
+  Unversionable items such as device files and pipes are ignored
+  if --force is specified.
+
+Valid options:
+  -q [--quiet]             : print nothing, or only summary information
+  -N [--non-recursive]     : obsolete; try --depth=files or --depth=immediates
+  --depth ARG              : limit operation by depth ARG ('empty', 'files',
+                             'immediates', or 'infinity')
+  --auto-props             : enable automatic properties
+  --force                  : force operation to run
+  --no-auto-props          : disable automatic properties
+  -m [--message] ARG       : specify log message ARG
+  -F [--file] ARG          : read log message from file ARG
+  --force-log              : force validity of log message source
+  --editor-cmd ARG         : use ARG as external editor
+  --encoding ARG           : treat value as being in charset encoding ARG
+  --with-revprop ARG       : set revision property ARG in new revision
+                             using the name[=value] format
+  --no-ignore              : disregard default and svn:ignore and
+                             svn:global-ignores property ignores
+
+Global options:
+  --username ARG           : specify a username ARG
+  --password ARG           : specify a password ARG (caution: on many operating
+                             systems, other users will be able to see this)
+  --password-from-stdin    : read password from stdin
+  --no-auth-cache          : do not cache authentication tokens
+  --non-interactive        : do no interactive prompting (default is to prompt
+                             only if standard input is a terminal device)
+  --force-interactive      : do interactive prompting even if standard input
+                             is not a terminal device
+  --trust-server-cert      : deprecated; same as
+                             --trust-server-cert-failures=unknown-ca
+  --trust-server-cert-failures ARG : with --non-interactive, accept SSL server
+                             certificates with failures; ARG is comma-separated
+                             list of 'unknown-ca' (Unknown Authority),
+                             'cn-mismatch' (Hostname mismatch), 'expired'
+                             (Expired certificate), 'not-yet-valid' (Not yet
+                             valid certificate) and 'other' (all other not
+                             separately classified certificate errors).
+  --config-dir ARG         : read user configuration files from directory ARG
+  --config-option ARG      : set user configuration option in the format:
+                                 FILE:SECTION:OPTION=[VALUE]
+                             For example:
+                                 servers:global:http-library=serf
+
+bash-3.2$ sn[Kvn add main[K[K[K[KMain.java
+svn: E155007: '/Users/hareem' is not a working copy
+bash-3.2$ cd javaprogram
+bash-3.2$ avn a[K[K[K[K[Ksvn as[Kdd m[KMain.java
+svn: E155007: '/Users/hareem/javaprogram' is not a working copy
+bash-3.2$ svn import /Users/hareem/3140/HW7
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '/Users/hareem/3140/HW7'
+bash-3.2$ pwd
+/Users/hareem/javaprogram
+bash-3.2$ pwdsvn import /Users/hareem/3140/HW7/
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '/Users/hareem/3140/HW7'
+bash-3.2$ svn import /Users/hareem/3140/HW7/./Users/hareem/3140/HW7/
+svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL 'Users/hareem/3140/HW7'
+bash-3.2$ ls
+README.txt	db		hooks
+conf		format		locks
+bash-3.2$ cd .
+bash-3.2$ ls
+README.txt	db		hooks
+conf		format		locks
+bash-3.2$ cd 
+bash-3.2$ ls
+3140			Music			eclipse-workspace
+3140project		OS			javaprogram
+Applications		Pictures		njit2019
+Desktop			Postman			screen.log
+Documents		Public			sqlite
+Downloads		VirtualBox VMs		test_file_1.txt
+Library			ctp
+Movies			eclipse
+bash-3.2$ cd 3140
+bash-3.2$ s[Kls
+HW5_P1		HW5_P2		HW6		HW7		README.md
+bash-3.2$ cd HW7
+bash-3.2$ ls
+Gradebook.class	Main.class	Student.class	makefile
+Gradebook.java	Main.java	Student.java	screen.log
+bash-3.2$ svn co --username assembla_username --password assembla_password https ://subversion.assembla.com/svn/your_space/
+svn: E170013: Unable to connect to a repository at URL 'https://subversion.assembla.com/svn/your_space'
+svn: E175009: The XML response contains invalid XML
+svn: E130003: Malformed XML: no element found at line 1
+bash-3.2$ exit
+exit
+
+Script done on Sat Dec  7 01:16:08 2019
